@@ -1,8 +1,6 @@
 package com.spiritscout.palegarden.client;
 
-import com.spiritscout.palegarden.client.datagen.PaleGardenLanguageProvider;
-import com.spiritscout.palegarden.client.datagen.PaleGardenLootTableProvider;
-import com.spiritscout.palegarden.client.datagen.PaleGardenModelProvider;
+import com.spiritscout.palegarden.client.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -13,5 +11,7 @@ public class PaleGardenBackportDataGenerator implements DataGeneratorEntrypoint 
 		pack.addProvider(PaleGardenModelProvider::new);
 		pack.addProvider(PaleGardenLanguageProvider::new);
 		pack.addProvider(PaleGardenLootTableProvider::new);
+		pack.addProvider(PaleGardenBlockTagProvider::new);
+		pack.addProvider(PaleGardenItemTagProvider::new);
 	}
 }
