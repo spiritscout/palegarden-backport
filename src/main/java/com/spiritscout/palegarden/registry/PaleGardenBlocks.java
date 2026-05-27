@@ -4,6 +4,7 @@ import com.spiritscout.palegarden.PaleGardenBackport;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -11,10 +12,22 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class PaleGardenBlocks {
+
+    //region wood set
     public static final Block PALE_OAK_PLANKS = registerBlock(
             "pale_oak_planks",
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS))
     );
+
+
+    public static final Block PALE_OAK_STAIRS = registerBlock(
+            "pale_oak_stairs",
+            new StairsBlock(
+                    PALE_OAK_PLANKS.getDefaultState(),
+                    AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)
+            )
+    );
+    //endregion
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

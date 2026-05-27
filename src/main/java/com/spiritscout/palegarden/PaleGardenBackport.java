@@ -25,8 +25,10 @@ public class PaleGardenBackport implements ModInitializer {
 		PaleGardenBlocks.registerModBlocks();
 		FlammableBlockRegistry.getDefaultInstance().add(PaleGardenBlocks.PALE_OAK_PLANKS, 5, 20);
 
+		// Add to vanilla creative tab, list order = display order
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
 			content.add(PaleGardenBlocks.PALE_OAK_PLANKS);
+			content.add(PaleGardenBlocks.PALE_OAK_STAIRS);
 		});
 
 		LOGGER.info("Hello Fabric world!");

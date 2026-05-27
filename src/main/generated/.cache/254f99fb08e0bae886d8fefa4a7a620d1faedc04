@@ -1,4 +1,9 @@
-// 1.21.1	2026-05-27T22:22:33.0363066	Pale Garden Backport/Model Definitions
-90677ab8d1cbd7802c9da4c24c5fa213e500475b assets\palegarden\blockstates\pale_oak_planks.json
-9b4d1ec2bb57fced2203d3690290d71e81c7a5e2 assets\palegarden\models\block\pale_oak_planks.json
+// 1.21.1	2026-05-28T00:39:22.9151717	Pale Garden Backport/Model Definitions
+eff6249880c9921ada916ec2fa89382ba6023713 assets\palegarden\blockstates\pale_oak_stairs.json
 c7925810efff16e16f6af6d68887f5ae4c85b9dc assets\palegarden\models\item\pale_oak_planks.json
+c1c4be063221dce0f6197c0abfb3f6e137f17a8c assets\palegarden\models\block\pale_oak_stairs_outer.json
+8e4e7d0dcbf09f1cc6bb981a7de433ef9e0ff452 assets\palegarden\models\block\pale_oak_stairs.json
+2239669fd19077bd3a871d6a474021784a0b24e2 assets\palegarden\models\item\pale_oak_stairs.json
+9b4d1ec2bb57fced2203d3690290d71e81c7a5e2 assets\palegarden\models\block\pale_oak_planks.json
+90677ab8d1cbd7802c9da4c24c5fa213e500475b assets\palegarden\blockstates\pale_oak_planks.json
+4227c3f66a9c5c00761b27ef3e274d9af30d4819 assets\palegarden\models\block\pale_oak_stairs_inner.json

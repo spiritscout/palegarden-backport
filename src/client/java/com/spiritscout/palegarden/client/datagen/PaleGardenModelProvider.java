@@ -14,7 +14,10 @@ public class PaleGardenModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(PaleGardenBlocks.PALE_OAK_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool palePlanksPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(PaleGardenBlocks.PALE_OAK_PLANKS);
+
+        palePlanksPool.stairs(PaleGardenBlocks.PALE_OAK_STAIRS);
     }
 
     @Override
