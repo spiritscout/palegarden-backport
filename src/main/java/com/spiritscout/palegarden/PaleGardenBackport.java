@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class PaleGardenBackport implements ModInitializer {
-	public static final String MOD_ID = "pale-garden-backport";
+	public static final String MOD_ID = "palegarden";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.

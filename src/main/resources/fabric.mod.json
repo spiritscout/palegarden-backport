@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "pale-garden-backport",
+	"id": "palegarden",
 	"version": "${version}",
 	"name": "Pale Garden Backport",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -26,7 +26,7 @@
 		]
 	},
 	"mixins": [
-		"pale-garden-backport.mixins.json",
+		"palegarden.mixins.json",
 		{
 			"config": "pale-garden-backport.client.mixins.json",
 			"environment": "client"
