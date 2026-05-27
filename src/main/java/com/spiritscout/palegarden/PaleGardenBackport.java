@@ -1,7 +1,10 @@
 package com.spiritscout.palegarden;
 
+import com.spiritscout.palegarden.registry.PaleGardenBlocks;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.ItemGroups;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,6 +21,11 @@ public class PaleGardenBackport implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		PaleGardenBlocks.registerModBlocks();
+
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
+			content.add(PaleGardenBlocks.PALE_OAK_PLANKS);
+		});
 
 		LOGGER.info("Hello Fabric world!");
 	}

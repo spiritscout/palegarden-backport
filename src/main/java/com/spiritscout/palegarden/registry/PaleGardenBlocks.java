@@ -1,0 +1,42 @@
+package com.spiritscout.palegarden.registry;
+
+import com.spiritscout.palegarden.PaleGardenBackport;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
+public class PaleGardenBlocks {
+    public static final Block PALE_OAK_PLANKS = registerBlock(
+            "pale_oak_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS))
+    );
+
+    private static Block registerBlock(String name, Block block){
+        registerBlockItem(name, block);
+        return Registry.register(
+                Registries.BLOCK,
+                Identifier.of(PaleGardenBackport.MOD_ID, name),
+                block
+        );
+
+    }
+
+    private static Item registerBlockItem(String name, Block block) {
+        return Registry.register(
+                Registries.ITEM,
+                Identifier.of(PaleGardenBackport.MOD_ID, name),
+                new BlockItem(block, new Item.Settings())
+        );
+    }
+
+    // Forces class loading, fires static initialisers, registers blocks
+    public static void registerModBlocks() {
+        PaleGardenBackport.LOGGER.info("Registering Mod Blocks for " + PaleGardenBackport.MOD_ID);
+    }
+
+}
