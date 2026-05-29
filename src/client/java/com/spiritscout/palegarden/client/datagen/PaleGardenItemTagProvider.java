@@ -18,5 +18,7 @@ public class PaleGardenItemTagProvider extends FabricTagProvider.ItemTagProvider
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(PaleGardenBlocks.PALE_OAK_PLANKS.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
+                .add(PaleGardenBlocks.PALE_OAK_STAIRS.asItem());
     }
 }

@@ -16,5 +16,6 @@ public class PaleGardenLanguageProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(PaleGardenBlocks.PALE_OAK_PLANKS, "Pale Oak Planks");
+        translationBuilder.add(PaleGardenBlocks.PALE_OAK_STAIRS, "Pale Oak Stairs");
     }
 }
