@@ -18,6 +18,7 @@ public class PaleGardenModelProvider extends FabricModelProvider {
                 blockStateModelGenerator.registerCubeAllModelTexturePool(PaleGardenBlocks.PALE_OAK_PLANKS);
 
         palePlanksPool.stairs(PaleGardenBlocks.PALE_OAK_STAIRS);
+        palePlanksPool.slab(PaleGardenBlocks.PALE_OAK_SLAB);
     }
 
     @Override

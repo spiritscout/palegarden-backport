@@ -1,10 +1,7 @@
 package com.spiritscout.palegarden.registry;
 
 import com.spiritscout.palegarden.PaleGardenBackport;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.StairsBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -25,6 +22,13 @@ public class PaleGardenBlocks {
             new StairsBlock(
                     PALE_OAK_PLANKS.getDefaultState(),
                     AbstractBlock.Settings.copy(Blocks.OAK_STAIRS)
+            )
+    );
+
+    public static final Block PALE_OAK_SLAB = registerBlock(
+            "pale_oak_slab",
+            new SlabBlock(
+                    AbstractBlock.Settings.copy(Blocks.OAK_SLAB)
             )
     );
     //endregion

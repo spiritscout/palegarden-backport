@@ -22,8 +22,12 @@ public class PaleGardenBlockTagProvider extends FabricTagProvider.BlockTagProvid
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(PaleGardenBlocks.PALE_OAK_STAIRS);
 
+        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+                .add(PaleGardenBlocks.PALE_OAK_SLAB);
+
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(PaleGardenBlocks.PALE_OAK_PLANKS)
-                .add(PaleGardenBlocks.PALE_OAK_STAIRS);
+                .add(PaleGardenBlocks.PALE_OAK_STAIRS)
+                .add(PaleGardenBlocks.PALE_OAK_SLAB);
     }
 }
