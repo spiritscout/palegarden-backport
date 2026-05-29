@@ -28,10 +28,14 @@ public class PaleGardenBlockTagProvider extends FabricTagProvider.BlockTagProvid
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(PaleGardenBlocks.PALE_OAK_FENCE);
 
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(PaleGardenBlocks.PALE_OAK_FENCE_GATE);
+
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(PaleGardenBlocks.PALE_OAK_PLANKS)
                 .add(PaleGardenBlocks.PALE_OAK_STAIRS)
                 .add(PaleGardenBlocks.PALE_OAK_SLAB)
-                .add(PaleGardenBlocks.PALE_OAK_FENCE);
+                .add(PaleGardenBlocks.PALE_OAK_FENCE)
+                .add(PaleGardenBlocks.PALE_OAK_FENCE_GATE);
     }
 }

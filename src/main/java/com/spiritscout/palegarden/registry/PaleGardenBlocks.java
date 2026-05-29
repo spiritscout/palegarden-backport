@@ -38,6 +38,14 @@ public class PaleGardenBlocks {
                     AbstractBlock.Settings.copy(Blocks.OAK_FENCE)
             )
     );
+
+    public static final Block PALE_OAK_FENCE_GATE = registerBlock(
+            "pale_oak_fence_gate",
+            new FenceGateBlock(
+                    PaleGardenWoodTypes.PALE_OAK_WOOD_TYPE,
+                    AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)
+            )
+    );
     //endregion
 
     private static Block registerBlock(String name, Block block){

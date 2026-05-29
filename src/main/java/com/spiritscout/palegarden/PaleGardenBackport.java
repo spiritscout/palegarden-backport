@@ -1,6 +1,7 @@
 package com.spiritscout.palegarden;
 
 import com.spiritscout.palegarden.registry.PaleGardenBlocks;
+import com.spiritscout.palegarden.registry.PaleGardenWoodTypes;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -22,11 +23,13 @@ public class PaleGardenBackport implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		PaleGardenWoodTypes.registerWoodTypes();
 		PaleGardenBlocks.registerModBlocks();
 		FlammableBlockRegistry.getDefaultInstance().add(PaleGardenBlocks.PALE_OAK_PLANKS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(PaleGardenBlocks.PALE_OAK_STAIRS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(PaleGardenBlocks.PALE_OAK_SLAB, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(PaleGardenBlocks.PALE_OAK_FENCE, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(PaleGardenBlocks.PALE_OAK_FENCE_GATE, 5, 20);
 
 		// Add to vanilla creative tab, list order = display order
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
@@ -34,6 +37,7 @@ public class PaleGardenBackport implements ModInitializer {
 			content.add(PaleGardenBlocks.PALE_OAK_STAIRS);
 			content.add(PaleGardenBlocks.PALE_OAK_SLAB);
 			content.add(PaleGardenBlocks.PALE_OAK_FENCE);
+			content.add(PaleGardenBlocks.PALE_OAK_FENCE_GATE);
 		});
 
 		LOGGER.info("Hello Fabric world!");

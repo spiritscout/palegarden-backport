@@ -1,6 +1,7 @@
-// 1.21.1	2026-05-29T16:43:09.5152345	Pale Garden Backport/Tags for minecraft:block
+// 1.21.1	2026-05-29T23:14:26.125073	Pale Garden Backport/Tags for minecraft:block
 878651af52c2e2de36021b8d2219c09987465db9 data\minecraft\tags\block\wooden_stairs.json
+9a1aafe7f4de4b33c621a65a46c4356482655263 data\minecraft\tags\block\fence_gates.json
 5bb0ed6be7f4475fc7135759e2395f75153ee451 data\minecraft\tags\block\wooden_fences.json
-255ceb1aa1b6ea83e221a03645367e8c582ceeab data\minecraft\tags\block\mineable\axe.json
+5c7fa91eadc8c1cc09a14fb8dac18472a0e26cb6 data\minecraft\tags\block\mineable\axe.json
 c2f1485ab560179a8cb02c1b9bfc876e54236974 data\minecraft\tags\block\planks.json
 433841d3584f3c202cfa2c84dd7ac156626bf2b4 data\minecraft\tags\block\wooden_slabs.json

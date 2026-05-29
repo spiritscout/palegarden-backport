@@ -20,6 +20,7 @@ public class PaleGardenModelProvider extends FabricModelProvider {
         palePlanksPool.stairs(PaleGardenBlocks.PALE_OAK_STAIRS);
         palePlanksPool.slab(PaleGardenBlocks.PALE_OAK_SLAB);
         palePlanksPool.fence(PaleGardenBlocks.PALE_OAK_FENCE);
+        palePlanksPool.fenceGate(PaleGardenBlocks.PALE_OAK_FENCE_GATE);
     }
 
     @Override
