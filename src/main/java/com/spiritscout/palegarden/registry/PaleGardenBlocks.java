@@ -31,6 +31,13 @@ public class PaleGardenBlocks {
                     AbstractBlock.Settings.copy(Blocks.OAK_SLAB)
             )
     );
+
+    public static final Block PALE_OAK_FENCE = registerBlock(
+            "pale_oak_fence",
+            new FenceBlock(
+                    AbstractBlock.Settings.copy(Blocks.OAK_FENCE)
+            )
+    );
     //endregion
 
     private static Block registerBlock(String name, Block block){

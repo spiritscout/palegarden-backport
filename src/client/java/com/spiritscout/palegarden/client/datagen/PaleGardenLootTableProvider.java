@@ -18,5 +18,6 @@ public class PaleGardenLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(PaleGardenBlocks.PALE_OAK_PLANKS);
         addDrop(PaleGardenBlocks.PALE_OAK_STAIRS);
         addDrop(PaleGardenBlocks.PALE_OAK_SLAB, slabDrops(PaleGardenBlocks.PALE_OAK_SLAB));
+        addDrop(PaleGardenBlocks.PALE_OAK_FENCE);
     }
 }

@@ -26,12 +26,14 @@ public class PaleGardenBackport implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(PaleGardenBlocks.PALE_OAK_PLANKS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(PaleGardenBlocks.PALE_OAK_STAIRS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(PaleGardenBlocks.PALE_OAK_SLAB, 5, 20);
+		FlammableBlockRegistry.getDefaultInstance().add(PaleGardenBlocks.PALE_OAK_FENCE, 5, 20);
 
 		// Add to vanilla creative tab, list order = display order
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
 			content.add(PaleGardenBlocks.PALE_OAK_PLANKS);
 			content.add(PaleGardenBlocks.PALE_OAK_STAIRS);
 			content.add(PaleGardenBlocks.PALE_OAK_SLAB);
+			content.add(PaleGardenBlocks.PALE_OAK_FENCE);
 		});
 
 		LOGGER.info("Hello Fabric world!");

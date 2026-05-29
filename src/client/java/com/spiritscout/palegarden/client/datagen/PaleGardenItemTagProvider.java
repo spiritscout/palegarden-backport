@@ -22,5 +22,7 @@ public class PaleGardenItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(PaleGardenBlocks.PALE_OAK_STAIRS.asItem());
         getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
                 .add(PaleGardenBlocks.PALE_OAK_SLAB.asItem());
+        getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
+                .add(PaleGardenBlocks.PALE_OAK_FENCE.asItem());
     }
 }
