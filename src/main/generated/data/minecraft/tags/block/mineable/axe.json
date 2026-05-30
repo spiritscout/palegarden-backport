@@ -4,6 +4,8 @@
     "palegarden:pale_oak_stairs",
     "palegarden:pale_oak_slab",
     "palegarden:pale_oak_fence",
-    "palegarden:pale_oak_fence_gate"
+    "palegarden:pale_oak_fence_gate",
+    "palegarden:pale_oak_pressure_plate",
+    "palegarden:pale_oak_button"
   ]
 }

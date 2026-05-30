@@ -1,6 +1,8 @@
-// 1.21.1	2026-05-29T23:14:26.1239796	Pale Garden Backport/Block Loot Tables
+// 1.21.1	2026-05-30T13:50:35.022795	Pale Garden Backport/Block Loot Tables
 6a58b32e3234c04aed1c56ebfc75f1188b7fc40a data\palegarden\loot_table\blocks\pale_oak_fence_gate.json
+8ca4aef4bc412b55aaf2e80d117d1d54a1e14d63 data\palegarden\loot_table\blocks\pale_oak_pressure_plate.json
 345b3557889641d28a6d690523e08fbfd5497e83 data\palegarden\loot_table\blocks\pale_oak_stairs.json
+064ce592f2da921c3e9bea032d392d7dcdb450eb data\palegarden\loot_table\blocks\pale_oak_button.json
 705285252032750e2805eed8f4d11409e4229c56 data\palegarden\loot_table\blocks\pale_oak_fence.json
 2a38fe0642ca7171d2ec45aa0621f5b44ebed1c6 data\palegarden\loot_table\blocks\pale_oak_planks.json
 e1cddac8910b76b316b7473418c2d381f360630e data\palegarden\loot_table\blocks\pale_oak_slab.json

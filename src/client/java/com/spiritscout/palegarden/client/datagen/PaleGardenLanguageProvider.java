@@ -20,5 +20,7 @@ public class PaleGardenLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(PaleGardenBlocks.PALE_OAK_SLAB, "Pale Oak Slab");
         translationBuilder.add(PaleGardenBlocks.PALE_OAK_FENCE, "Pale Oak Fence");
         translationBuilder.add(PaleGardenBlocks.PALE_OAK_FENCE_GATE, "Pale Oak Fence Gate");
+        translationBuilder.add(PaleGardenBlocks.PALE_OAK_PRESSURE_PLATE, "Pale Oak Pressure Plate");
+        translationBuilder.add(PaleGardenBlocks.PALE_OAK_BUTTON, "Pale Oak Button");
     }
 }

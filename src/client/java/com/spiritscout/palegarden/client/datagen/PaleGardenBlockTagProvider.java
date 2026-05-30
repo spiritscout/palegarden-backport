@@ -31,11 +31,19 @@ public class PaleGardenBlockTagProvider extends FabricTagProvider.BlockTagProvid
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(PaleGardenBlocks.PALE_OAK_FENCE_GATE);
 
+        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(PaleGardenBlocks.PALE_OAK_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
+                .add(PaleGardenBlocks.PALE_OAK_BUTTON);
+
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(PaleGardenBlocks.PALE_OAK_PLANKS)
                 .add(PaleGardenBlocks.PALE_OAK_STAIRS)
                 .add(PaleGardenBlocks.PALE_OAK_SLAB)
                 .add(PaleGardenBlocks.PALE_OAK_FENCE)
-                .add(PaleGardenBlocks.PALE_OAK_FENCE_GATE);
+                .add(PaleGardenBlocks.PALE_OAK_FENCE_GATE)
+                .add(PaleGardenBlocks.PALE_OAK_PRESSURE_PLATE)
+                .add(PaleGardenBlocks.PALE_OAK_BUTTON);
     }
 }
