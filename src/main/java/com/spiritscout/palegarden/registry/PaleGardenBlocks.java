@@ -46,9 +46,26 @@ public class PaleGardenBlocks {
                     AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE)
             )
     );
+
+    public static final Block PALE_OAK_BUTTON = registerBlock(
+            "pale_oak_button",
+            new ButtonBlock(
+                    PaleGardenWoodTypes.PALE_OAK_BLOCK_SET_TYPE,
+                    30,
+                    AbstractBlock.Settings.copy(Blocks.OAK_BUTTON)
+            )
+    );
+
+    public static final Block PALE_OAK_PRESSURE_PLATE = registerBlock(
+            "pale_oak_pressure_plate",
+            new PressurePlateBlock(
+                    PaleGardenWoodTypes.PALE_OAK_BLOCK_SET_TYPE,
+                    AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE)
+            )
+    );
     //endregion
 
-    private static Block registerBlock(String name, Block block){
+    private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(
                 Registries.BLOCK,

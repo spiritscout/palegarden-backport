@@ -38,6 +38,14 @@ public class PaleGardenBackport implements ModInitializer {
 			content.add(PaleGardenBlocks.PALE_OAK_SLAB);
 			content.add(PaleGardenBlocks.PALE_OAK_FENCE);
 			content.add(PaleGardenBlocks.PALE_OAK_FENCE_GATE);
+			content.add(PaleGardenBlocks.PALE_OAK_PRESSURE_PLATE);
+			content.add(PaleGardenBlocks.PALE_OAK_BUTTON);
+		});
+
+		// Add to vanilla redstone tab, list order = display order
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(content -> {
+			content.add(PaleGardenBlocks.PALE_OAK_PRESSURE_PLATE);
+			content.add(PaleGardenBlocks.PALE_OAK_BUTTON);
 		});
 
 		LOGGER.info("Hello Fabric world!");
